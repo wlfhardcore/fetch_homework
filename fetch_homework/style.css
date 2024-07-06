@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+}
+
+#product-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+
+.product-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    width: 200px;
+}
+
+.product-card:hover {
+    box-shadow: 0px 1px 2px #000000;
+    transform: scale(1.1);
+}
+
+.product-image {
+    height: 150px;
+    width: 80%;
+}
+
+.product-name {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.product-price {
+    color: #2c3e50;
+    margin: 0 0 10px;
+    font-size: 1em;
+}
+
+/*--POPUP--*/
+.close-icon {
+    background-color: transparent;
+    position: absolute;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    border: none;
+    right: 10px;
+    top: 10px;
+}
+
+#previewPopup {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    flex-direction: row;
+    border-radius: 8px;
+    max-height: 600px;
+    max-width: 800px;
+    position: fixed;
+    display: flex;
+    padding: 30px;
+    z-index: 1000;
+    display: none;
+    left: 50%;
+    top: 50%;
+}
+
+#previewPopup h2 {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 24px;
+}
+
+#previewPopup p {
+    margin-bottom: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    max-width: 300px;
+    font-size: 16px;
+    padding: 10px;
+    color: #666;
+
+}
+
+#previewPopup img {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 200px;
+    height: auto;
+    float: left;
+}
+
+#popupPrice {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    float: right;
+}
+
+#popupBuyButton {
+    background-color: #4CAF50;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    float: right;
+    border: none;
+}
+
+#popupBuyButton:hover {
+    background-color: #45a049;
+}
+
+.genel {
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+}
+
+.right-side {
+    align-items: center;
+    display: flex;
+}
+
+.left-side {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
